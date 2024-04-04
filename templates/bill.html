@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link href="{{ url_for('static', filename='bill.css') }}" rel="stylesheet" type="text/css" />
+
+    <!-- Add any additional styling if required -->
+</head>
+<body>
+<div id="hero"> 
+    <div class="container">
+        <div class="header">
+            <h1>Order Bill</h1>
+        </div>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Phone Number</th>
+                <th>Customer ID</th>
+                <th>Address</th>
+                <th>Milk Type</th>
+                <th>Liters</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ phone }}</td>
+                <td>{{ customer_id }}</td>
+                <td>{{ address }}</td>
+                <td>{{ milk_type }}</td>
+                <td>{{ liters }}</td>
+                <td>₹{{ total_price }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

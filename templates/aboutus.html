@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MilkMan</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<header>
+  <div class="container">
+      <a href="{{ url_for('showindexpage') }}" class="logo">MilkMan</a>
+      <strong>
+        <nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('showindexpage') }}">Home</a></li>
+            <li><a href="{{ url_for('showmilkpage') }}">Milk</a></li>
+            <li><a href="{{ url_for('index') }}">Subscriber</a></li>
+            <li><a href="{{ url_for('showaboutuspage') }}">About Us</a></li>
+          </ul>
+        </nav>
+      </strong>
+    </div>
+</header>
+<body>
+    <section id = "hero">
+      <div class="container">
+        <div class = "info">
+          <h1>FRESH FROM FARM TO YOUR TABLE</h1>
+          <h2>Since 1905.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur, animi odit magnam eligendi maiores quos! Eos sequi aliquam vel harum molestias officiis officia, inventore alias, doloribus cupiditate fugit voluptatibus.</p>
+          <h2>Our Founders</h2>
+          
+        </div>
+      </div>
+    </section>
+</body>

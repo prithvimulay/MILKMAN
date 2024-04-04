@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- Include any necessary stylesheets or scripts -->
+</head>
+<body>
+    <button id="payButton">Pay Now</button>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        var options = {
+            "key": "rzp_test_GBeaO6CKSUvIH3", // Replace with your Razorpay key ID
+            "amount": 50000, // Amount in paise (i.e., ₹500)
+            "currency": "INR",
+            "name": "Your Company Name",
+            "description": "Payment for Milk Order",
+            "handler": function (response){
+                // Handle successful payment response
+                alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
+            },
+            "prefill": {
+                // Prefill customer details if available
+            },
+            "theme": {
+                // Customize the Razorpay checkout theme
+            }
+        };
+
+        var rzp = new Razorpay(options);
+
+        document.getElementById('payButton').onclick = function(){
+            rzp.open();
+        };
+    </script>
+</body>
+</html>

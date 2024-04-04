@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#hero{
+    width: 100%;
+    height: 800px;
+    background: url('./home.jpg') no-repeat center / cover;
+    color:#543737;
+    background-size: cover;
+    background-position: center;
+  }
+
+.container {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.total {
+    margin-top: 20px;
+}
+
+.total p {
+    text-align: right;
+    margin: 5px 0;
+    font-weight: bold;
+}

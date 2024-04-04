@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='subscriber.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+
+</head>
+<!-- nav bar -->
+<header>
+    <div class="container">
+        <a href="{{ url_for('showindexpage') }}" class="logo">MilkMan</a>
+        <strong>
+          <nav>
+            <ul class="menu">
+              <li><a href="{{ url_for('showindexpage') }}">Home</a></li>
+              <li><a href="{{ url_for('showmilkpage') }}">Milk</a></li>
+              <li><a href="{{ url_for('index') }}">Subscriber</a></li>
+            </ul>
+          </nav>
+        </strong>
+      </div>
+    <!-- <a class="cta" href="{{ url_for('showloginpage') }}"><button> login </button></a>
+    <a class="cta" href="{{ url_for('showloginpage') }}"><button> register </button></a> -->
+</header>
+<body>
+
+    
+<!-- actual action of sub page -->
+<div id="hero">   
+    <div class="container2">
+        <h2>Subscriber Page</h2>
+        <form action="{{ url_for('submit_subscriber') }}" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="customer_id">Customer ID:</label>
+                <input type="text" name="customer_id" required>
+            </div>
+            <div class="form-group">
+                <label for="milk_type">Milk Type:</label>
+                <select name="milk_type" required>
+                    <option value="buffalo_milk">Buffalo Milk</option>
+                    <option value="cow_milk">Cow Milk</option>
+                    <option value="gir_cow_milk">Gir Cow Milk</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="liters">Liters of Milk:</label>
+                <input type="text" name="liters" id="litersInput" readonly required>
+                <div class="numpad">
+                    <div class="row">
+                        <button onclick="appendToInput(1)">1</button>
+                        <button onclick="appendToInput(2)">2</button>
+                        <button onclick="appendToInput(3)">3</button>
+                    </div>
+                    <div class="row">
+                        <button onclick="appendToInput(4)">4</button>
+                        <button onclick="appendToInput(5)">5</button>
+                        <button onclick="appendToInput(6)">6</button>
+                    </div>
+                    <div class="row">
+                        <button onclick="appendToInput(7)">7</button>
+                        <button onclick="appendToInput(8)">8</button>
+                        <button onclick="appendToInput(9)">9</button>
+                    </div>
+                    <div class="row">
+                        <button onclick="clearInput()">C</button>
+                        <button onclick="appendToInput(0)">0</button>
+                        <button onclick="deleteLastDigit()">←</button>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='sub_script.js') }}"></script>
+</div>
+
+</body>
+</html>

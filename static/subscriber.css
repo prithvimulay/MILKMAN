@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body {
+    font-family: 'Koulen', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+/* header{
+    background-color:#005FEE;
+    color:white;
+    display:flex;
+    justify-content:flex-start;
+    align-items: baseline;
+    padding: 30px 10%;
+  }  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+  }
+
+.logo{
+    font-family: 'Koulen', sans-serif;
+    font-size: 60px;
+    color: #edf0f1;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-right: 50px;
+  }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+nav ul li {
+    margin-right: 20px;
+    padding: 0px 20px;
+  }
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Koulen', sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+
+nav ul li a:hover{
+    color: #a3a1a1;
+  }
+  
+.cta {
+    text-decoration: none;
+    color: white;
+  }
+
+.cta button{
+    float: right;
+    margin-left: 20px;
+    padding: 1px 25px;
+    background-color: rgba(61, 153, 61, 1);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: 'Koulen', sans-serif;
+    color: white;
+    font-size: 20px;
+
+  }
+
+.cta button:hover{
+    background-color: rgba(46, 142, 46, 0.8);
+  }
+ */
+
+.container2 {
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+#hero{
+  margin: 0;
+  width: 100%;
+  height: 690px;
+  background: url('./home.jpg') no-repeat center / cover;
+  color:#543737;
+  background-size: cover;
+  background-position: center;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #005fee;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0044cc;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: calc(33.33% - 5px);
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
